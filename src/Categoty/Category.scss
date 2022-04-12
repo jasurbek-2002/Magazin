@@ -1,0 +1,37 @@
+.Category{
+    position: relative;
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        top: 0;
+        color: rgb(57, 128, 195);
+        position: absolute;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;        margin: 20px;
+        height: 300px;
+        width: 25%;
+        &:hover{
+            
+            transition: box-shadow 0.5s, transform 0.5s;
+            opacity: 0.6;
+        }
+        &__img{
+           width: 120px;
+           height: 120px;
+        }
+        &__title{
+           color: rgb(57, 128, 195);
+        }
+    }
+}
